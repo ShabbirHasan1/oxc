@@ -1,0 +1,11 @@
+---
+source: crates/oxc_linter/src/tester.rs
+expression: export
+---
+  ⚠ eslint-plugin-import(export): Multiple exports of name 'foo'.
+   ╭─[index.js:1:1]
+ 1 │ let foo; export { foo }; export * from "./export-all"
+   ·                   ───
+   ╰────
+
+
